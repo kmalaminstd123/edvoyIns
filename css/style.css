@@ -65,6 +65,10 @@ a {
     background-color: var(--nav-bg-color);
 }
 
+.navbar-brand{
+    font-size: 30px;
+}
+
 .navbar-scroll {
     background-color: var(--nav-bg-scroll-bg-color);
     transition: all 0.5s;
@@ -121,6 +125,21 @@ a {
 .nav-sign-up-desn a {
     color: #fff !important;
 }
+
+
+
+/* nav search form */
+
+.nav-form{
+    display: none;
+    transition: all 0.5s linear;
+}
+
+.nav-form .nav-search-form{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+/* nav search form */
 
 /* Dropdown course item styling */
 .course-item {
