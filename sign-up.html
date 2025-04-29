@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- fonts  -->
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome -->
+
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- slick slider -->
+
+    <!-- section animatoin -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- section animatoin -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- navbar start here -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-desn">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">EduWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <!-- navbar form -->
+            <form class="nav-form">
+                  <div class="input-group search-input nav-search-form my-auto">
+                      <span class="input-group-text bg-white border-0" id="basic-addon1">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </span>
+                      <input type="text" class="form-control border-0" placeholder="Search for courses..." aria-label="Search" aria-describedby="basic-addon1">
+                  </div>
+            </form>
+            <!-- navbar form -->
+  
+        
+            <div class="collapse navbar-collapse" id="navbarMain">
+              <ul class="navbar-nav ms-auto">
+  
+        
+                <!-- Courses -->
+                <!-- data-bs-toggle="dropdown"  -->
+                <li class="nav-item dropdown d-lg-block d-none">
+                  <a class="nav-link dropdown-toggle px-4" href="./courses.html" id="coursesDropdown" role="button" aria-expanded="false">
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu nav-dropdown-one nav-course-list" aria-labelledby="coursesDropdown" style="min-width: 300px;">
+  
+                      <div class="course-item-header border-bottom">
+                          <h4 class="ps-3 pt-4">Top Courses</h4>
+                      </div>
+                    <li class="course-item">
+                      <a href="#" class="course-item">
+                          <div class="nav-course-img border border-2 p-2">
+                              <img src="./images/oxford-logo.png" alt="Course">
+                          </div>
+                          <div>
+                          <strong>MSC Advance Computer Science with Business</strong><br>
+                          <small>Oxford University</small>
+                          </div>
+                      </a>
+                    </li>
+                    
+                    <li><hr class="dropdown-divider"></li>
+  
+                    <li class="course-item">
+                      <a href="#" class="course-item">
+                          <div class="nav-course-img border border-2 p-2">
+                              <img src="./images/oxford-logo.png" alt="Course">
+                          </div>
+                          <div>
+                          <strong>MSC Advance Computer Science with Business</strong><br>
+                          <small>Oxford University</small>
+                          </div>
+                      </a>
+                    </li>
+  
+                    <li><hr class="dropdown-divider"></li>
+  
+                    <li class="course-item">
+                      <a href="#" class="course-item">
+                          <div class="nav-course-img border border-2 p-2">
+                              <img src="./images/oxford-logo.png" alt="Course">
+                          </div>
+                          <div>
+                          <strong>MSC Advance Computer Science with Business</strong><br>
+                          <small>Oxford University</small>
+                          </div>
+                      </a>
+                    </li>
+  
+                    <li><hr class="dropdown-divider"></li>
+  
+                    <li class="course-item">
+                      <a href="#" class="course-item">
+                          <div class="nav-course-img border border-2 p-2">
+                              <img src="./images/oxford-logo.png" alt="Course">
+                          </div>
+                          <div>
+                          <strong>MSC Advance Computer Science with Business</strong><br>
+                          <small>Oxford University</small>
+                          </div>
+                      </a>
+                    </li>
+  
+                    <li><hr class="dropdown-divider"></li>
+                  </ul>
+                </li>
+        
+                <!-- Courses Mobile Version -->
+                <li class="nav-item d-lg-none">
+                  <a class="nav-link px-4" href="./courses.html">Courses</a>
+                </li>
+        
+                <!-- Countries -->
+                <li class="nav-item dropdown d-lg-block d-none">
+                  <a class="nav-link dropdown-toggle" href="#" id="countriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Countries
+                  </a>
+                  <ul class="dropdown-menu nav-country-list p-3" aria-labelledby="countriesDropdown" style="min-width: 400px;">
+                      <h5 class="ms-2">Top Institutions in</h5>
+                      <div class="row">
+  
+                        <!-- Left column -->
+                        <div class="col-6">
+                          <li class="dropdown-item d-flex align-items-center">
+                            <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/gb.png" alt="UK Flag"> United Kingdom</a>
+                          </li>
+                          <li class="dropdown-item d-flex align-items-center">
+                            <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/ca.png" alt="Canada Flag"> Canada</a>
+                          </li>
+                          <li class="dropdown-item d-flex align-items-center">
+                            <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/au.png" alt="Australia Flag"> Australia</a>
+                          </li>
+                          <li class="dropdown-item d-flex align-items-center">
+                            <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/de.png" alt="Germany Flag"> Germany</a>
+                          </li>
+                          <li class="dropdown-item d-flex align-items-center">
+                            <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/fr.png" alt="France Flag"> France</a>
+                          </li>
+                          <li class="dropdown-item d-flex align-items-center">
+                            <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/nz.png" alt="New Zealand Flag"> New Zealand</a>
+                          </li>
+                          <li class="dropdown-item d-flex align-items-center">
+                            <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/ie.png" alt="Ireland Flag"> Ireland</a>
+                          </li> 
+                        </div>
+  
+                        <div class="col-6">
+                          <li class="dropdown-item d-flex align-items-center">
+                              <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag"> Singapore</a>
+                            </li>
+                            <li class="dropdown-item d-flex align-items-center">
+                              <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/se.png" alt="Sweden Flag"> Sweden</a>
+                            </li>
+                            <li class="dropdown-item d-flex align-items-center">
+                              <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/ae.png" alt="UAE Flag"> UAE</a>
+                            </li>
+                            <li class="dropdown-item d-flex align-items-center">
+                              <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/nl.png" alt="Netherlands Flag"> Netherlands</a>
+                            </li>
+                            <li class="dropdown-item d-flex align-items-center">
+                              <a href="#"><img class="flag-img" src="https://flagcdn.com/w40/us.png" alt="USA Flag"> USA</a>
+                          </li>
+                        </div>
+                    
+                        
+                      </div>
+                  </ul>
+                </li>
+        
+                <!-- Countries Mobile Version -->
+                <li class="nav-item d-lg-none">
+                  <a class="nav-link px-4" href="countries.html">Countries</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a href="./login.html" class="nav-link px-4">Login</a>
+                </li>
+  
+                <li class="nav-item nav-sign-up-desn">
+                  <a href="./sign-up.html" class="nav-link px-4">Sign Up</a>
+                </li>
+        
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- sign up card start -->
+    <div class="auth-card">
+        <h3 class="text-center">Sign Up</h3>
+        <form>
+          <div class="mb-3">
+            <label class="form-label"><i class="fa-solid fa-user form-icon"></i>Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label"><i class="fa-solid fa-envelope form-icon"></i>Email</label>
+            <input type="email" class="form-control" placeholder="Enter email" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label"><i class="fa-solid fa-lock form-icon"></i>Password</label>
+            <input type="password" class="form-control" placeholder="Create password" />
+          </div>
+          <button type="submit" class="btn auth-btn w-100 mt-3">Sign Up</button>
+          <p class="text-center switch-link mt-3">Already have an account? <a href="./login.html">Login</a></p>
+        </form>
+    </div>
+    <!-- sign up card end -->
+
+    <!-- footer section start here -->
+    <footer>
+
+        <div class="inner-footer">
+
+            <div class="footer-top">
+
+                <div class="row">
+
+                    <div class="col-md-2 col-sm-12">
+                        <img src="./images/wa-logo.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-md-2 col-sm-12">
+                        <h4>Explore</h4>
+
+                        <ul class="ps-0">
+                            <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Institutions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Study Destination</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12">
+                        <h4>About</h4>
+
+                        <ul class="ps-0">
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Company Policies</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Terms of Service</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12">
+                        <h4>Resources</h4>
+
+                        <ul class="ps-0">
+                            <li class="nav-item"><a class="nav-link" href="#">Articls</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Exams</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <h4>Popular Courses</h4>
+
+                        <ul class="ps-0">
+                            <li class="nav-item"><a class="nav-link" href="#">Law Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Computer Science Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Cyber Security Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Naval Architecture Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Artificial Intelligence Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">MBA Courses in UK</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Artificial Intelligence Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">HR Courses in Canada</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Business Analytics Courses in USA</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-lower">
+
+                <div class="footer-lower-top">
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-12">
+                            <p>&copy; 2020 - 2025 World Academy Educational Services Ltd. All rights reserved.</p>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12">
+                            <ul class="d-flex gap-4 justify-content-md-end justify-content-center">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-lower-bottom">
+                    <ul class="ps-0 d-flex flex-wrap">
+                        <li><a href="#">Study Abroad Consultant in Chennai</a></li>
+                        <li><a href="#">Study Abroad Consultant in Vijayawada</a></li>
+                        <li><a href="#">Study Abroad Consultant in New Delhi</a></li>
+                        <li><a href="#">Study Abroad Consultant in Hyderabad</a></li>
+                        <li><a href="#">Study Abroad Consultant in Riyadh</a></li>
+                        <li><a href="#">Study Abroad Consultant in Cairo</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- footer section end here -->
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery cdn -->
+
+    <!-- slick slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick slider -->
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap cdn -->
+
+
+
+    <!-- custom slick-slider -->
+    <script src="./js/slick-slider.js"></script>
+    <!-- custom slick-slider -->
+
+    <!-- font-awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font-awesome -->
+
+    <!-- section animatoin -->
+    <!-- section animatoin -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
