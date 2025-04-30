@@ -748,45 +748,67 @@ button.navbar-toggler {
 } */
 
 .course-list-card {
-    background-color: white;
-    padding: 15px;
-    transition: all 0.3s linear;
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
     margin-top: 30px;
-    border-radius: 5px;
+    border: 1px solid #f0f0f0;
 }
 
 .course-list-card:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-    transition: all 0.3s linear;
-}
-
-.course-list-card .course-name h5 {
-    font-size: 17px;
-}
-
-.course-list-card .course-provider {
-    margin-top: 40px;
-}
-
-.course-list-card .university-name p {
-    margin-bottom: 0;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
 }
 
 .course-list-card a {
-    color: #000;
+    color: #212529;
+    text-decoration: none;
 }
 
-.course-list-card .university-img img {
-    object-fit: cover;
-    height: 30px;
-    width: auto;
-}
-
-.course-list-card .price p {
-    color: #6845C6;
+.course-name h5 {
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 0;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+.course-provider {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.uni-details {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.university-img img {
+    height: 36px;
+    width: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.university-name p {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    margin: 0;
+}
+
+.price p {
+    color: #7b2cbf;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
 }
 
 .right-filter-button {
