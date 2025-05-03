@@ -20,13 +20,18 @@
     <!-- bootstrap cdn -->
 
     <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
     <!-- slick slider -->
 
     <!-- section animatoin -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- section animatoin -->
+
+    <!-- swiper js css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper js css -->
+
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -45,7 +50,7 @@
 
           <!-- navbar form -->
           <form class="nav-form">
-                <div class="input-group search-input nav-search-form my-auto">
+                <div class="input-group search-input nav-search-form my-auto shadow-none">
                     <span class="input-group-text bg-white border-0" id="basic-addon1">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
@@ -237,8 +242,20 @@
             </div>
 
         </div>
-
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(40,255,255,0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,0,0,0.9)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#F2F4F7" />
+        </g>
+        </svg>
     </section>
+    <div class="clearifix"></div>
     <!-- home banner section end here -->
 
 
@@ -513,36 +530,52 @@
 
     <div class="country-slider">
 
-        <div class="country-slider-sec-header mb-5">
-            <h2 class="text-center fs-1 fw-bolder">Unlock your future in top study destinations</h2>
+        <div class="container">
+
+            <div class="country-slider-sec-header mb-5">
+                <h2 class="text-center fs-1 fw-bolder">Unlock your future in top study destinations</h2>
+            </div>
+    
+            <div class="countrySlide-bx-slider bx-slider country-swiper swiper">
+    
+                <div class="swiper-wrapper">
+
+                    <div class="slider-item swiper-slide">
+                        <img src="images/country-1.png" alt="">
+                        <h4>Canada</h4>
+                    </div>
+        
+                    <div class="slider-item swiper-slide">
+                        <img src="images/country-1.png" alt="">
+                        <h4>Canada</h4>
+                    </div>
+        
+                    <div class="slider-item swiper-slide">
+                        <img src="images/country-1.png" alt="">
+                        <h4>Canada</h4>
+                    </div>
+        
+                    <div class="slider-item swiper-slide">
+                        <img src="images/country-1.png" alt="">
+                        <h4>Canada</h4>
+                    </div>
+        
+                    <div class="slider-item swiper-slide">
+                        <img src="images/country-1.png" alt="">
+                        <h4>Canada</h4>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+            </div>
+
         </div>
 
-        <div class="countrySlide-bx-slider bx-slider">
-            <div class="slider-item">
-                <img src="images/country-1.png" alt="">
-                <h4>Canada</h4>
-            </div>
-
-            <div class="slider-item">
-                <img src="images/country-1.png" alt="">
-                <h4>Canada</h4>
-            </div>
-
-            <div class="slider-item">
-                <img src="images/country-1.png" alt="">
-                <h4>Canada</h4>
-            </div>
-
-            <div class="slider-item">
-                <img src="images/country-1.png" alt="">
-                <h4>Canada</h4>
-            </div>
-
-            <div class="slider-item">
-                <img src="images/country-1.png" alt="">
-                <h4>Canada</h4>
-            </div>
-        </div>
     </div>
 
     <div class="clearifix"></div>
@@ -552,89 +585,102 @@
     <!-- university slider section start here -->
     <div class="uni-slider">
 
-        <div class="uni-slider-sec-header">
-            <h2 class="text-center fs-1 fw-bolder mb-5">Driving excellence with our university partnerships</h2>
-        </div>
+        <div class="container">
 
-        <div class="uni-slick-slider">
-
-            <div class="slider-item">
-                <div class="inner-slider-item">
-                    <img class="img-fluid" src="./images/university-1.png" alt="">
-                    <div class="uni-sub-details">
-                        <h4>University Of Portsmouth</h4>
-                        <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
+            <div class="uni-slider-sec-header">
+                <h2 class="text-center fs-1 fw-bolder mb-5">Driving excellence with our university partnerships</h2>
             </div>
-
-            <div class="slider-item">
-                <div class="inner-slider-item">
-                    <img class="img-fluid" src="./images/university-1.png" alt="">
-                    <div class="uni-sub-details">
-                        <h4>University Of Portsmouth</h4>
-                        <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+    
+            <div class="uni-swiper swiper">
+    
+                <div class="uni-slick-slider swiper-wrapper">
+    
+                    <div class="slider-item swiper-slide">
+                        <div class="inner-slider-item">
+                            <img class="img-fluid" src="./images/university-1.png" alt="">
+                            <div class="uni-sub-details">
+                                <h4>University Of Portsmouth</h4>
+                                <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="inner-slider-item">
-                    <img class="img-fluid" src="./images/university-1.png" alt="">
-                    <div class="uni-sub-details">
-                        <h4>University Of Portsmouth</h4>
-                        <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+        
+                    <div class="slider-item swiper-slide">
+                        <div class="inner-slider-item">
+                            <img class="img-fluid" src="./images/university-1.png" alt="">
+                            <div class="uni-sub-details">
+                                <h4>University Of Portsmouth</h4>
+                                <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="inner-slider-item">
-                    <img class="img-fluid" src="./images/university-1.png" alt="">
-                    <div class="uni-sub-details">
-                        <h4>University Of Portsmouth</h4>
-                        <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+        
+                    <div class="slider-item swiper-slide">
+                        <div class="inner-slider-item">
+                            <img class="img-fluid" src="./images/university-1.png" alt="">
+                            <div class="uni-sub-details">
+                                <h4>University Of Portsmouth</h4>
+                                <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="inner-slider-item">
-                    <img class="img-fluid" src="./images/university-1.png" alt="">
-                    <div class="uni-sub-details">
-                        <h4>University Of Portsmouth</h4>
-                        <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+        
+                    <div class="slider-item swiper-slide">
+                        <div class="inner-slider-item">
+                            <img class="img-fluid" src="./images/university-1.png" alt="">
+                            <div class="uni-sub-details">
+                                <h4>University Of Portsmouth</h4>
+                                <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="inner-slider-item">
-                    <img class="img-fluid" src="./images/university-1.png" alt="">
-                    <div class="uni-sub-details">
-                        <h4>University Of Portsmouth</h4>
-                        <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+        
+                    <div class="slider-item swiper-slide">
+                        <div class="inner-slider-item">
+                            <img class="img-fluid" src="./images/university-1.png" alt="">
+                            <div class="uni-sub-details">
+                                <h4>University Of Portsmouth</h4>
+                                <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="inner-slider-item">
-                    <img class="img-fluid" src="./images/university-1.png" alt="">
-                    <div class="uni-sub-details">
-                        <h4>University Of Portsmouth</h4>
-                        <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+        
+                    <div class="slider-item swiper-slide">
+                        <div class="inner-slider-item">
+                            <img class="img-fluid" src="./images/university-1.png" alt="">
+                            <div class="uni-sub-details">
+                                <h4>University Of Portsmouth</h4>
+                                <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
                     </div>
-                    <a href="#" class="stretched-link"></a>
+        
+                    <div class="slider-item swiper-slide">
+                        <div class="inner-slider-item">
+                            <img class="img-fluid" src="./images/university-1.png" alt="">
+                            <div class="uni-sub-details">
+                                <h4>University Of Portsmouth</h4>
+                                <span class="d-flex align-items-center gap-2"><img class="img-fluid" src="./images/flag-1.png" alt=""> <h5>United Kingdom</h5></span>
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+        
                 </div>
+    
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
             </div>
-
+            
         </div>
 
     </div>
@@ -821,7 +867,7 @@
     <!-- jquery cdn -->
 
     <!-- slick slider -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <!-- slick slider -->
 
     <!-- bootstrap cdn -->
@@ -831,7 +877,7 @@
     
 
     <!-- custom slick-slider -->
-     <script src="./js/slick-slider.js"></script>
+     <!-- <script src="./js/slick-slider.js"></script> -->
     <!-- custom slick-slider -->
 
     <!-- font-awesome -->
@@ -839,10 +885,18 @@
     <!-- font-awesome -->
 
     <!-- section animatoin -->
-    <!-- section animatoin -->
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+    <!-- section animatoin -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper js -->
+
+    <!-- custom swiper slider js -->
+    <script src="./js/swiper-slider.js"></script>
+    <!-- custom swiper slider js -->
+
 
 </body>
 </html>
